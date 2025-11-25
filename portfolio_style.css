@@ -2398,6 +2398,14 @@ body {
     font-weight: 600;
     font-size: 0.95rem;
 }
+.engagement-image.single {
+    grid-column: 1 / -1; /* occuper toute la ligne */
+    height: 250px;       /* tu peux ajuster */
+}
+.engagement-image.single img {
+    height: 100%;
+    object-fit: cover;
+}
 
 /* ==================== GALERIE AVEC HOVER ZOOM HINT ==================== */
 .experience-gallery {
