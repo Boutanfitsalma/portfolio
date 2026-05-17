@@ -31,20 +31,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Scroll to top button
 const scrollTopBtn = document.getElementById('scrollTop');
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 500) {
-        scrollTopBtn.classList.add('visible');
-    } else {
-        scrollTopBtn.classList.remove('visible');
-    }
-});
-
-scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 500) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
     });
-});
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -69,15 +71,14 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Mobile menu toggle (à implémenter si nécessaire)
+// Mobile menu toggle
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
 if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        mobileMenuBtn.querySelector('i').classList.toggle('fa-bars');
-        mobileMenuBtn.querySelector('i').classList.toggle('fa-times');
+        mobileMenuBtn.classList.toggle('active');
     });
 }
 
@@ -110,23 +111,27 @@ window.addEventListener('scroll', updateActiveNavLink);
 window.addEventListener('load', () => {
     const stats = document.querySelectorAll('.stat-number');
     
-    stats.forEach(stat => {
-        const target = parseInt(stat.innerText);
-        const increment = target / 50;
-        let current = 0;
-        
-        const updateStat = () => {
-            if (current < target) {
-                current += increment;
-                stat.innerText = Math.ceil(current) + (stat.innerText.includes('+') ? '+' : '');
-                setTimeout(updateStat, 30);
-            } else {
-                stat.innerText = target + (stat.innerText.includes('+') ? '+' : '');
-            }
-        };
-        
-        updateStat();
-    });
+    if (stats.length > 0) {
+        stats.forEach(stat => {
+            const target = parseInt(stat.innerText);
+            if (isNaN(target)) return;
+            
+            const increment = target / 50;
+            let current = 0;
+            
+            const updateStat = () => {
+                if (current < target) {
+                    current += increment;
+                    stat.innerText = Math.ceil(current) + (stat.innerText.includes('+') ? '+' : '');
+                    setTimeout(updateStat, 30);
+                } else {
+                    stat.innerText = target + (stat.innerText.includes('+') ? '+' : '');
+                }
+            };
+            
+            updateStat();
+        });
+    }
 });
 
 // Typing effect for hero title (optional)
