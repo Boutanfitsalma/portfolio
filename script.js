@@ -1,4 +1,4 @@
-// Navbar scroll effect
+// Navbar scroll 
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
