@@ -6,7 +6,7 @@
     <meta name="description" content="Salma Boutanfit - Data Science & AI Engineer | Portfolio">
     <title>Salma Boutanfit | Data Science & AI Portfolio</title>
     
-    <!-- Raleway + JetBrains Mono -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="portfolio_premium.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation Premium -->
@@ -48,7 +48,7 @@
     <!-- Hero Section Premium -->
     <section id="home" class="hero-premium-centered">
         <div class="hero-container-centered">
-            <div class="hero-content-
+            <div class="hero-content-centered">
                 <!-- Badge CDI Disponible -->
                 <div class="pfe-badge-mega">
                     <div class="badge-glow-ring"></div>
@@ -58,12 +58,14 @@
                             <span class="badge-title-mega">Recherche CDI Data Science & AI</span>
                             <span class="badge-date-mega">Disponible Septembre 2026</span>
                         </div>
+                        <i class="fas fa-arrow-right badge-arrow"></i>
                     </div>
                 </div>
                 
                 <!-- Nom avec effet gradient -->
                 <h1 class="hero-name-centered">
-                    <span class="name-line gradient-name">Salma Boutanfit</span>
+                    <span class="name-line">Salma</span>
+                    <span class="name-line gradient-name">Boutanfit</span>
                 </h1>
                 
                 <!-- Titre professionnel -->
@@ -154,7 +156,7 @@
                             <div class="stat-label">Projets réalisés</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-value">5+</div>
+                            <div class="stat-value">7+</div>
                             <div class="stat-label">Certifications</div>
                         </div>
                     </div>
@@ -176,7 +178,7 @@
                             <span>MLOps</span>
                         </div>
                         <div class="image-wrapper">
-                            <img src="images/data-analytics.jpg" alt="Data Science">
+                            <img src="images/data-analytics.jpg" alt="Data Science" class="main-image">
                             <div class="image-glow"></div>
                         </div>
                     </div>
@@ -194,8 +196,11 @@
             </div>
             
             <div class="education-timeline">
+                <!-- ENSIAS -->
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                    <div class="timeline-marker">
+                        <img src="images/ensias.jpg" alt="ENSIAS" class="timeline-logo">
+                    </div>
                     <div class="timeline-content">
                         <span class="timeline-date">2021 - 2026</span>
                         <h3>Diplôme d'Ingénieur d'État</h3>
@@ -213,8 +218,11 @@
                     </div>
                 </div>
                 
+                <!-- Classes Prépa -->
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                    <div class="timeline-marker">
+                        <img src="images/prepa.png" alt="Classes Prépa" class="timeline-logo">
+                    </div>
                     <div class="timeline-content">
                         <span class="timeline-date">2019 - 2021</span>
                         <h3>Classes Préparatoires MP</h3>
@@ -227,6 +235,24 @@
                             <span class="highlight-tag">Mathématiques</span>
                             <span class="highlight-tag">Physique</span>
                             <span class="highlight-tag">Algorithmique</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bac -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <img src="images/maarif.jpg" alt="Lycée" class="timeline-logo">
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2019</span>
+                        <h3>Baccalauréat Sciences Mathématiques</h3>
+                        <h4>Lycée Maarif - Casablanca</h4>
+                        <p class="timeline-description">
+                            Option Sciences Mathématiques avec mention Très Bien.
+                        </p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-tag">Mention Très Bien</span>
                         </div>
                     </div>
                 </div>
@@ -246,8 +272,8 @@
                 <!-- Stage PFE Maroclear -->
                 <div class="experience-card featured">
                     <div class="exp-header">
-                        <div class="exp-icon">
-                            <i class="fas fa-robot"></i>
+                        <div class="exp-logo-wrapper">
+                            <img src="images/maroclear_logo.png" alt="Maroclear" class="exp-logo">
                         </div>
                         <div class="exp-meta">
                             <h3>Stage PFE - Assistant Conversationnel Multi-Agents</h3>
@@ -302,8 +328,8 @@
                 <!-- Stage DGI -->
                 <div class="experience-card">
                     <div class="exp-header">
-                        <div class="exp-icon">
-                            <i class="fas fa-comments"></i>
+                        <div class="exp-logo-wrapper">
+                            <img src="images/dgi_logo.png" alt="DGI" class="exp-logo">
                         </div>
                         <div class="exp-meta">
                             <h3>Stage - Chatbot RAG pour Support Client</h3>
@@ -333,7 +359,7 @@
                         </div>
                         <div class="achievement-item">
                             <i class="fas fa-check-circle"></i>
-                            <span>Interface conversationnelle avec historique et contexte persistant</span>
+                            <span>Support multilingue <strong>Français/Arabe</strong> avec performance optimale</span>
                         </div>
                         <div class="achievement-item">
                             <i class="fas fa-check-circle"></i>
@@ -349,18 +375,40 @@
                         <span class="tech-tag">FAISS</span>
                         <span class="tech-tag">Streamlit</span>
                     </div>
+                    
+                    <!-- Gallery d'images du projet DGI -->
+                    <div class="exp-gallery">
+                        <div class="exp-gallery-item" onclick="openLightbox('images/chat-interface.png', 'Interface Chatbot Fiscal')">
+                            <img src="images/chat-interface.png" alt="Interface chatbot">
+                            <div class="exp-image-caption">
+                                <span>Interface du Chatbot</span>
+                            </div>
+                        </div>
+                        <div class="exp-gallery-item" onclick="openLightbox('images/arabic-query.png', 'Requête en Arabe')">
+                            <img src="images/arabic-query.png" alt="Requête arabe">
+                            <div class="exp-image-caption">
+                                <span>Support Arabe</span>
+                            </div>
+                        </div>
+                        <div class="exp-gallery-item" onclick="openLightbox('images/system-response.png', 'Réponse du Système')">
+                            <img src="images/system-response.png" alt="Réponse système">
+                            <div class="exp-image-caption">
+                                <span>Réponses Contextuelles</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <!-- Stage Norsys -->
+                <!-- Stage ONEE -->
                 <div class="experience-card">
                     <div class="exp-header">
-                        <div class="exp-icon">
-                            <i class="fas fa-chart-line"></i>
+                        <div class="exp-logo-wrapper">
+                            <img src="images/logoonep.png" alt="ONEE" class="exp-logo">
                         </div>
                         <div class="exp-meta">
                             <h3>Stage - Dashboard Business Intelligence</h3>
                             <div class="exp-company">
-                                <strong>Norsys Afrique</strong>
+                                <strong>ONEE (Office National de l'Electricité et de l'Eau)</strong>
                                 <span class="exp-divider">•</span>
                                 <span>Juil 2024 - Août 2024 (2 mois)</span>
                             </div>
@@ -395,6 +443,28 @@
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">ETL</span>
                     </div>
+                    
+                    <!-- Gallery d'images du projet ONEE -->
+                    <div class="exp-gallery">
+                        <div class="exp-gallery-item" onclick="openLightbox('images/stage.png', 'Dashboard Principal ONEE')">
+                            <img src="images/stage.png" alt="Dashboard">
+                            <div class="exp-image-caption">
+                                <span>Dashboard Principal</span>
+                            </div>
+                        </div>
+                        <div class="exp-gallery-item" onclick="openLightbox('images/stage2.png', 'KPIs de Performance')">
+                            <img src="images/stage2.png" alt="KPIs">
+                            <div class="exp-image-caption">
+                                <span>KPIs de Performance</span>
+                            </div>
+                        </div>
+                        <div class="exp-gallery-item" onclick="openLightbox('images/stage3.png', 'Analyse des Tasks')">
+                            <img src="images/stage3.png" alt="Analyses">
+                            <div class="exp-image-caption">
+                                <span>Analyses Détaillées</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -409,171 +479,117 @@
             </div>
             
             <div class="projects-grid">
-                <!-- Projet 1: RAG System -->
+                <!-- Projet 1: Firefox ELK Dashboard -->
                 <div class="project-card featured">
                     <div class="project-image">
-                        <img src="images/rag-system.png" alt="RAG System">
+                        <img src="images/dashboard-overview.png" alt="Firefox ELK Dashboard">
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag ai">IA Générative</span>
                             <span class="project-tag featured-tag">Featured</span>
                         </div>
-                        <h3>Système RAG Multi-Documents</h3>
+                    </div>
+                    <div class="project-content">
+                        <h3>Firefox ELK Real-Time Monitoring Dashboard</h3>
                         <p>
-                            Chatbot intelligent utilisant <strong>Retrieval-Augmented Generation</strong> pour interroger 
-                            des documents complexes avec réponses contextuelles précises.
+                            Dashboard de monitoring en temps réel utilisant <strong>ELK Stack</strong> pour analyser 
+                            les logs système et les métriques de performance de Firefox.
                         </p>
                         <div class="project-tech">
+                            <span>Elasticsearch</span>
+                            <span>Logstash</span>
+                            <span>Kibana</span>
                             <span>Python</span>
-                            <span>LangChain</span>
-                            <span>ChromaDB</span>
-                            <span>OpenAI</span>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Projet 2: Medical Images Classification -->
+                <!-- Projet 2: Data Warehouse -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/medical-ai.png" alt="Medical Classification">
+                        <img src="images/dwproject.png" alt="Data Warehouse">
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <span class="project-tag">Data Engineering</span>
                         </div>
                     </div>
                     <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag ml">Machine Learning</span>
-                        </div>
-                        <h3>Classification d'Images Médicales</h3>
+                        <h3>University Data Warehouse & BI</h3>
                         <p>
-                            Modèle <strong>Deep Learning</strong> pour classifier des images médicales avec 
-                            <strong>95% de précision</strong> en utilisant des architectures CNN avancées.
+                            Conception et implémentation d'un <strong>Data Warehouse</strong> pour l'analyse 
+                            universitaire avec ETL et dashboards BI.
                         </p>
                         <div class="project-tech">
-                            <span>TensorFlow</span>
-                            <span>Keras</span>
-                            <span>CNN</span>
-                            <span>Transfer Learning</span>
+                            <span>SQL Server</span>
+                            <span>SSIS</span>
+                            <span>Power BI</span>
+                            <span>Star Schema</span>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Projet 3: Sentiment Analysis -->
+                <!-- Projet 3: N8N Workflow -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/sentiment.png" alt="Sentiment Analysis">
+                        <img src="images/n8n.png" alt="N8N Automation">
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <span class="project-tag">Automation</span>
                         </div>
                     </div>
                     <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag nlp">NLP</span>
-                        </div>
-                        <h3>Analyse de Sentiments en Temps Réel</h3>
+                        <h3>N8N Workflow Automation</h3>
                         <p>
-                            Pipeline NLP pour analyser les sentiments sur les réseaux sociaux en utilisant 
-                            <strong>BERT</strong> et streaming de données en temps réel.
+                            Automatisation de processus métier avec <strong>N8N</strong> pour orchestrer 
+                            des workflows complexes et intégrations API.
                         </p>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>BERT</span>
-                            <span>Kafka</span>
-                            <span>FastAPI</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projet 4: Recommendation System -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/recommendation.png" alt="Recommendation System">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag ml">Machine Learning</span>
-                        </div>
-                        <h3>Système de Recommandation Hybride</h3>
-                        <p>
-                            Moteur de recommandation combinant <strong>filtrage collaboratif</strong> et 
-                            <strong>content-based filtering</strong> pour personnaliser l'expérience utilisateur.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Scikit-learn</span>
-                            <span>Surprise</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projet 5: Time Series Forecasting -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/forecasting.png" alt="Time Series">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag ml">Machine Learning</span>
-                        </div>
-                        <h3>Prévision de Séries Temporelles</h3>
-                        <p>
-                            Modèle <strong>LSTM</strong> pour prédire les ventes futures avec analyse de patterns 
-                            saisonniers et détection d'anomalies.
-                        </p>
-                        <div class="project-tech">
-                            <span>PyTorch</span>
-                            <span>LSTM</span>
-                            <span>Time Series</span>
-                            <span>Streamlit</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projet 6: MLOps Pipeline -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/mlops.png" alt="MLOps">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="project-tag mlops">MLOps</span>
-                        </div>
-                        <h3>Pipeline MLOps End-to-End</h3>
-                        <p>
-                            Infrastructure complète pour le déploiement, monitoring et versioning de modèles ML 
-                            avec <strong>CI/CD automatisé</strong>.
-                        </p>
-                        <div class="project-tech">
+                            <span>N8N</span>
+                            <span>Webhook</span>
+                            <span>API Integration</span>
                             <span>Docker</span>
-                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 4: ML Pipeline -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ml.png" alt="ML Pipeline">
+                        <div class="project-overlay">
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>End-to-End ML Pipeline</h3>
+                        <p>
+                            Pipeline complet de Machine Learning avec preprocessing, training, 
+                            et déploiement pour la classification de données.
+                        </p>
+                        <div class="project-tech">
+                            <span>Scikit-learn</span>
                             <span>MLflow</span>
-                            <span>GitHub Actions</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 5: Hospital Dashboard -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/dashboard-pharma.png" alt="Hospital Dashboard">
+                        <div class="project-overlay">
+                            <span class="project-tag">Healthcare Analytics</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hospital Analytics Dashboard</h3>
+                        <p>
+                            Dashboard analytique pour le suivi des KPIs hospitaliers et 
+                            l'optimisation des ressources médicales.
+                        </p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                            <span>DAX</span>
+                            <span>Healthcare</span>
                         </div>
                     </div>
                 </div>
@@ -766,58 +782,74 @@
             </div>
             
             <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-provider">
-                        <i class="fab fa-google"></i>
-                        <span>Google Cloud</span>
+                <div class="cert-card" onclick="openLightbox('images/ai-agent-arch.jpg', 'AI Agent Architecture - 365 Data Science')">
+                    <div class="cert-image">
+                        <img src="images/ai-agent-arch.jpg" alt="AI Agent Architecture">
                     </div>
-                    <h3>Professional Data Engineer</h3>
-                    <p>Architecture cloud et pipelines de données à grande échelle</p>
+                    <div class="cert-content">
+                        <h3>AI Agent Architecture</h3>
+                        <p class="cert-provider"><i class="fas fa-certificate"></i> 365 Data Science</p>
+                    </div>
                 </div>
                 
-                <div class="cert-card">
-                    <div class="cert-provider">
-                        <i class="fas fa-certificate"></i>
-                        <span>DeepLearning.AI</span>
+                <div class="cert-card" onclick="openLightbox('images/langchain-agents.jpg', 'Designing Agentic Systems with LangChain - DataCamp')">
+                    <div class="cert-image">
+                        <img src="images/langchain-agents.jpg" alt="LangChain Agents">
                     </div>
-                    <h3>LangChain & LLM Application</h3>
-                    <p>Développement d'applications IA avec LangChain</p>
+                    <div class="cert-content">
+                        <h3>Designing Agentic Systems with LangChain</h3>
+                        <p class="cert-provider"><i class="fas fa-graduation-cap"></i> DataCamp</p>
+                    </div>
                 </div>
                 
-                <div class="cert-card">
-                    <div class="cert-provider">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Coursera</span>
+                <div class="cert-card" onclick="openLightbox('images/datascie_page-0001.jpg', 'Senior Data Scientist Career Track - 365 Data Science')">
+                    <div class="cert-image">
+                        <img src="images/datascie_page-0001.jpg" alt="Senior Data Scientist">
                     </div>
-                    <h3>Machine Learning Specialization</h3>
-                    <p>Andrew Ng - Stanford University</p>
+                    <div class="cert-content">
+                        <h3>Senior Data Scientist Career Track</h3>
+                        <p class="cert-provider"><i class="fas fa-certificate"></i> 365 Data Science</p>
+                    </div>
                 </div>
                 
-                <div class="cert-card">
-                    <div class="cert-provider">
-                        <i class="fab fa-aws"></i>
-                        <span>Amazon Web Services</span>
+                <div class="cert-card" onclick="openLightbox('images/dataanalyst_page-0001.jpg', 'CERTIFIED ASSOCIATE DATA ANALYST - DataCamp')">
+                    <div class="cert-image">
+                        <img src="images/dataanalyst_page-0001.jpg" alt="Data Analyst">
                     </div>
-                    <h3>AWS Machine Learning</h3>
-                    <p>Déploiement de modèles ML sur AWS</p>
+                    <div class="cert-content">
+                        <h3>Certified Associate Data Analyst</h3>
+                        <p class="cert-provider"><i class="fas fa-graduation-cap"></i> DataCamp</p>
+                    </div>
                 </div>
                 
-                <div class="cert-card">
-                    <div class="cert-provider">
-                        <i class="fas fa-database"></i>
-                        <span>MongoDB University</span>
+                <div class="cert-card" onclick="openLightbox('images/virtu_page-0001.jpg', 'Containerization and Virtualization Concepts - DataCamp')">
+                    <div class="cert-image">
+                        <img src="images/virtu_page-0001.jpg" alt="Containerization">
                     </div>
-                    <h3>MongoDB Developer</h3>
-                    <p>Bases de données NoSQL et design patterns</p>
+                    <div class="cert-content">
+                        <h3>Containerization & Virtualization</h3>
+                        <p class="cert-provider"><i class="fas fa-graduation-cap"></i> DataCamp</p>
+                    </div>
                 </div>
                 
-                <div class="cert-card">
-                    <div class="cert-provider">
-                        <i class="fab fa-docker"></i>
-                        <span>Docker</span>
+                <div class="cert-card" onclick="openLightbox('images/dw.png', 'Data Warehousing Concepts - DataCamp')">
+                    <div class="cert-image">
+                        <img src="images/dw.png" alt="Data Warehousing">
                     </div>
-                    <h3>Docker Mastery</h3>
-                    <p>Containerisation et orchestration</p>
+                    <div class="cert-content">
+                        <h3>Data Warehousing Concepts</h3>
+                        <p class="cert-provider"><i class="fas fa-graduation-cap"></i> DataCamp</p>
+                    </div>
+                </div>
+                
+                <div class="cert-card" onclick="openLightbox('images/noo.jpg', 'Introduction to NoSQL - DataCamp')">
+                    <div class="cert-image">
+                        <img src="images/noo.jpg" alt="NoSQL">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Introduction to NoSQL</h3>
+                        <p class="cert-provider"><i class="fas fa-graduation-cap"></i> DataCamp</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -846,21 +878,25 @@
                 </div>
                 
                 <div class="engagement-gallery">
-                    <div class="gallery-item main">
+                    <div class="gallery-item main" onclick="openLightbox('images/dons.jpeg', 'Responsable cellule dons')">
                         <img src="images/dons.jpeg" alt="Responsable cellule dons">
                         <div class="gallery-caption">Responsable cellule dons</div>
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" onclick="openLightbox('images/medical.jpg', 'Action médicale')">
                         <img src="images/medical.jpg" alt="Action médicale">
                         <div class="gallery-caption">Action médicale</div>
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" onclick="openLightbox('images/orp.jpg', 'Soutien orphelins')">
                         <img src="images/orp.jpg" alt="Soutien orphelins">
                         <div class="gallery-caption">Soutien scolaire</div>
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" onclick="openLightbox('images/actmo.jpg', 'Activités')">
                         <img src="images/actmo.jpg" alt="Activités">
                         <div class="gallery-caption">Activités communautaires</div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('images/vet.jpg', 'Collecte vêtements')">
+                        <img src="images/vet.jpg" alt="Collecte vêtements">
+                        <div class="gallery-caption">Collecte de vêtements</div>
                     </div>
                 </div>
             </div>
@@ -988,6 +1024,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox pour les images -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-image" id="lightbox-image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
 
     <!-- Scroll to Top -->
     <button id="scrollTop" class="scroll-top-btn" aria-label="Retour en haut">
